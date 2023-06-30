@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Images\Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\Users\henri\OneDrive\Área de Trabalho\Friends Adventure Laucher\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Icon.ico" />
+    <None Remove="Images\LaucherBackground.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Icon.ico" />
+    <Resource Include="Images\LaucherBackground.jpg" />
+  </ItemGroup>
+
+</Project>
